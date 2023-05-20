@@ -5,7 +5,7 @@ var CACHE_NAME = "steam-web-cashes";
 var urlsToCache = [
     '/pwa/',
     '/pwa/css/style.css',
-    '/pwa/js/main.js'
+    '/pwa/main.js'
 ]
 
 // インストール処理を登録
