@@ -4,9 +4,8 @@
 // キャッシュ名とキャッシュファイルの指定
 var CACHE_NAME = 'steam-web-caches';
 var urlsToCache = [
-	'/pwa/',
-	'/pwa/css/style.css',
-	'/pwa/main.js'
+	'/css/style.css',
+	'/main.js'
 ];
 
 // インストール処理
@@ -15,7 +14,7 @@ self.addEventListener('install', function(event) {
 		caches
 			.open(CACHE_NAME)
 			.then(function(cache) {
-				return cache.addAll(urlsToCache.map(url => new Request(url, {credentials: 'same-origin'})));
+				return cache.addAll(urlsToCache);
 			})
 	);
 });
