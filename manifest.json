@@ -1,0 +1,13 @@
+{
+  "short_name": "SteamWeb",
+  "name": "SteamWeb",
+  "display": "standalone",
+  "start_url": "index.html",
+  "icons": [
+    {
+      "src": "images/fcs.png",
+      "sizes": "597x597",
+      "type": "image/png"
+    }
+  ]
+}
